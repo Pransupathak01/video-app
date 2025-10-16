@@ -1,6 +1,23 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "allowJs": true,
+    "maxNodeModuleJsDepth": 10,
+    "module": "nodenext",
+    "moduleResolution": "nodenext"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "@types/**/*.d.ts",
+    "polyfills.ts",
+    "src/**/*.graphql"
+  ]
 }

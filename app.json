@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "videoApp",
     "name": "videoApp",
     "slug": "videoApp",
     "version": "1.0.0",
@@ -21,10 +22,16 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.pransupdev01.videoApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "569e67df-7b02-48fb-9439-37dfa8fe5557"
+      }
     }
   }
 }
